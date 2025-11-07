@@ -21,7 +21,6 @@
   "workbench.editor.enablePreview": false,
   "window.titleBarStyle": "custom",
   "window.autoDetectColorScheme": false,
-  "workbench.preferredDarkColorTheme": "Dracula",
   "editor.tokenColorCustomizations": {
     "[Dracula]": {
       "textMateRules": [
