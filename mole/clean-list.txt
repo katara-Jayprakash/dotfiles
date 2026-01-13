@@ -1,0 +1,59 @@
+# Mole Cleanup Preview - 2026-01-09 21:18:17
+#
+# How to protect files:
+# 1. Copy any path below to ~/.config/mole/whitelist
+# 2. Run: mo clean --whitelist
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/katara/Library/Caches  # 2.71GB (19 items)
+/Users/katara/Library/Logs  # 750KB (7 items)
+
+=== Finder metadata ===
+
+=== macOS system caches ===
+
+=== Sandboxed app caches ===
+
+=== Browsers ===
+/Users/katara/Library/Caches/Google/Chrome/Default  # 266.4MB
+/Users/katara/Library/Application Support/Google/Chrome/Default/GPUCache  # 545KB (5 items)
+/Users/katara/Library/Caches/BraveSoftware/Brave-Browser/Default  # 23.0MB
+
+=== Cloud storage ===
+
+=== Office applications ===
+
+=== Developer tools ===
+/Users/katara/.kube/cache  # 2.7MB (2 items)
+/Users/katara/Library/Caches/SentryCrash  # 8KB (2 items)
+/Users/katara/Library/Caches/Homebrew  # 226.1MB (11 items)
+
+=== Development applications ===
+/Users/katara/Library/Application Support/discord/Cache/Cache_Data  # 44.4MB
+/Users/katara/Library/Application Support/Slack/Cache  # 23.3MB (2 items)
+/Users/katara/Library/Caches/us.zoom.xos/WebKit  # 68KB
+/Users/katara/.zcompdump  # 49KB
+
+=== Virtual machine tools ===
+
+=== Application Support ===
+
+=== Uninstalled app data ===
+
+=== Apple Silicon updates ===
+
+=== iOS device backups ===
+
+=== Time Machine incomplete backups ===
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 3.36GB
+# Items: 483
+# Categories: 21
