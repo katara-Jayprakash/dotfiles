@@ -4,8 +4,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Tokyo Night Light",
-    "dark": "JetBrains Dark",
+    "light": "One Light",
+    "dark": "JetBrains Dark Blur",
   },
   "buffer_font_family": "JetBrains Mono NL",
   "tabs": {
@@ -80,9 +80,9 @@
     "Go": {
       "hard_tabs": true,
     },
-    "Make": {
-      "hard_tabs": true,
-    },
+    // "Make": {
+    //   "hard_tabs": true,
+    // },
   },
   "lsp": {
     "yaml-language-server": {
@@ -122,22 +122,22 @@
         }
       }
     },
-    "file_types": {
-      "Helm": [
-        "**/templates/*.yaml",
-        "**/templates/*.yml"
-      ],
-    },
+    // "file_types": {
+    //   "Helm": [
+    //     "**/templates/*.yaml",
+    //     "**/templates/*.yml"
+    //   ],
+    // },
   },
   "hard_tabs": false,
   "formatter": "language_server",
   "format_on_save": "on",
   "project_panel": {
+    "folder_indicator": "chevron",
     "indent_size": 10,
     "default_width": 200,
     "entry_spacing": "comfortable",
     "file_icons": true,
-    "folder_icons": false,
     "auto_fold_dirs": false,
     "auto_reveal_entries": true,
     "button": true,
@@ -155,11 +155,9 @@
   "inlay_hints": {
     "enabled": false,
   },
-  "features": {
-    "edit_prediction_provider": "none",
-  },
   "soft_wrap": "editor_width",
   "edit_predictions": {
+    "provider": "none",
     "disabled_globs": [],
   },
   "scrollbar": {
@@ -210,13 +208,15 @@
   "collaboration_panel": {
     "button": false,
   },
-  "notification_panel": {
-    "button": false,
-  },
   "line_indicator_format": "short",
   "terminal": {
     "shell": {
-      "program": "zsh",
+      "with_arguments": {
+        "program": "/bin/zsh",
+        "args": [
+          "-l"
+        ]
+      }
     },
     "working_directory": "current_project_directory",
     "dock": "bottom",
@@ -230,7 +230,7 @@
     "button": true,
     "line_height": "comfortable",
     "toolbar": {
-      "breadcrumbs": false,
-    },
-  },
+      "breadcrumbs": false
+    }
+  }
 }
