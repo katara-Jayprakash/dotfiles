@@ -64,11 +64,10 @@ zinit light Aloxaf/fzf-tab
 zstyle ':fzf-tab:*' switch-group '<' '>'
 zstyle ':fzf-tab:*' fzf-flags --height=60% --layout=reverse
 
-# Directory preview
+# zoxide directory preview
 zstyle ':fzf-tab:complete:cd:*' \
   fzf-preview 'eza --all --color=always --icons "$realpath" 2>/dev/null || ls -la "$realpath"'
 
-# zoxide directory preview
 zstyle ':fzf-tab:complete:__zoxide_z:*' \
   fzf-preview 'eza --all --color=always --icons "$realpath" 2>/dev/null || ls -la "$realpath"'
 
@@ -111,6 +110,7 @@ alias lt='eza -T --git-ignore --icons'
 # ===== ZOXIDE =====
 if command -v zoxide >/dev/null 2>&1; then
   eval "$(zoxide init zsh)"
+  alias cd='z'
 fi
 
 # ===== DIRENV =====
@@ -136,13 +136,10 @@ if command -v fzf >/dev/null 2>&1; then
 fi
 
 # ===== KEYBINDINGS =====
-
-# Tab -> interactive completion
 bindkey '^I' fzf-tab-complete
 
-# Right arrow -> accept autosuggestion
+# Right arrow accepts autosuggestions.
 bindkey '^[[C' forward-char
 
 # ===== SYNTAX HIGHLIGHTING =====
-# Keep this last.
 zinit light zsh-users/zsh-syntax-highlighting
